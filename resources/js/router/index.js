@@ -1,12 +1,12 @@
 import { createWebHistory, createRouter } from 'vue-router'
-import Partner_Home from '../views/member/pages/Home.vue'
+import Login from '../views/auth/Login.vue'
 
 
 const routes = [
     {
         path:'/',
         name:'partner_index',
-        component:Partner_Home
+        component:Login
     },
     {
         path: '/:unauthorized(.*)*',
