@@ -13,6 +13,25 @@ const routes = [
         name: '401',
         component: () => import ('../error/404.vue')
      },
+     
+     {
+        path: '/admin-accounts',
+        name:'admin-accounts',
+        component: () => import('../views/admin/pages/Accounts.vue')
+     }
+
+     ,
+     {
+        path:'/admin-profile',
+        name:'admin-profile',
+        component: () => import('../views/admin/pages/Profile.vue')
+     },
+    {
+        path:'/admin-analytics',
+        name:'admin-analytics',
+        component:() => import('../views/admin/pages/Analytics.vue')
+    }
+
 ]
 
 const router = createRouter({
